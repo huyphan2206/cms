@@ -34,10 +34,10 @@ router.route('/posts/delete/:id')
 
 // Category
 router.route('/category')
-    .get(adminController.getCategories);
+    .get(adminController.getCategories)
     // .post(adminController.createCategories);
 
-router.route('category/create')
+router.route('/category')
     .post(adminController.createCategories);
 
 router.route('/category/edit/:id')
